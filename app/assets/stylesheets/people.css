@@ -1,0 +1,28 @@
+ul {
+    width: 100%;
+    clear: both;
+    height: 32px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    width: 15%;
+    height: 32px;
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li.id_field {
+    width: 2%;
+}
+
+li.errors_field {
+    width: 22%;
+}
+.error{
+    color: red;
+}
