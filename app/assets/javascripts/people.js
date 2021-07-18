@@ -30,8 +30,6 @@ $(document).ready(function (){
 // This is useful to create people by csv upload.
     $("form#upload_csv").on("submit",function(event){
         event.preventDefault();
-
-
         var fd = new FormData();
         var files = $('#csv_file')[0].files;
 
@@ -92,8 +90,8 @@ function append_data(data){
              value['last_name'] = (value['last_name']==null ? '' : value['last_name']);
              value['email'] = (value['email']==null ? '' : value['email']);
              value['phone'] = (value['phone']==null ? '' : value['phone']);
-
              errors = JSON.stringify(value["error_messages"]);
+
             $('.people').append('<div>' +
              '        <form action="/people" class="person_form" method="patch">' +
              '          <ul>' +
