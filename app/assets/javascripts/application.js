@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require jquery
 //= require jquery.validate.min
+//= require bootstrap.min
 //= require people

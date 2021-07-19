@@ -94,27 +94,28 @@ function append_data(data){
 
             $('.people').append('<div>' +
              '        <form action="/people" class="person_form" method="patch">' +
-             '          <ul>' +
-             '            <li class="id_field">'+value['id']+'</li>' +
-             '            <li><input type="text" value="'+value['first_name']+'" name=person[first_name]" %></li>' +
-             '            <li><input type="text" value="'+value['last_name']+'" name="person[last_name]" %></li>' +
-             '            <li><input type="text" value="'+value['email']+'" name="person[email]" %></li>' +
-             '            <li><input type="text" value="'+value['phone']+'" name="person[phone]" %></li>' +
-             '            <li class="errors_field">'+errors+'</li>' +
-             '            <li>' +
-             '              <button type="submit">Save</button>' +
+             '          <ul class="list-group  list-group-horizontal row text-center form-input">' +
+             '            <li class="list-group-item flex-fill col-sm-1">'+value['id']+'</li>' +
+             '            <li class="list-group-item flex-fill col-sm-1"><input type="text" placeholder="First name" value="'+value['first_name']+'" name=person[first_name]" class="input"></li>' +
+             '            <li class="list-group-item flex-fill col-sm-1"><input type="text" placeholder="Last name" value="'+value['last_name']+'" name="person[last_name]" class="input" ></li>' +
+             '            <li class="list-group-item flex-fill col-sm-2"><input type="text" placeholder="Email" value="'+value['email']+'" name="person[email]" class="input"></li>' +
+             '            <li class="list-group-item flex-fill col-sm-2"><input type-="text" placeholder="Phone" value="'+value['phone']+'" name="person[phone]" class="input"></li>' +
+             '            <li class="list-group-item flex-fill col-sm-4">'+errors+'</li>' +
+             '            <li class="list-group-item flex-fill col-sm-1">' +
+             '              <button type="submit" class="btn btn-success">Save</button>' +
              '            </li>' +
              '          </ul>' +
              '        </form>' +
              '      </div>');
         }else{
-            $('.people').append('<ul>' +
-                '<li class="id_field">'+value["id"]+'</li>' +
-                '<li>'+value["first_name"]+'</li>' +
-                '<li>'+value["last_name"]+'</li>' +
-                '<li>'+value["email"]+'</li>' +
-                '<li>'+value["phone"]+'</li>' +
-                '<li>'+errors+'</li>' +
+            $('.people').append('<ul class="list-group  list-group-horizontal row text-center">' +
+                '<li class="list-group-item flex-fill col-sm-1">'+value["id"]+'</li>' +
+                '<li  class="list-group-item  flex-fill col-sm-1">'+value["first_name"]+'</li>' +
+                '<li class="list-group-item flex-fill col-sm-1">'+value["last_name"]+'</li>' +
+                '<li  class="list-group-item flex-fill col-sm-2">'+value["email"]+'</li>' +
+                '<li  class="list-group-item flex-fill col-sm-2">'+value["phone"]+'</li>' +
+                '<li  class="list-group-item flex-fill col-sm-4">'+errors+'</li>' +
+                '<li  class="list-group-item flex-fill col-sm-1"></li>' +
                 '</ul>');
         }
     });

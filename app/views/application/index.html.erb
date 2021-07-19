@@ -1,15 +1,31 @@
-<form action="/people" method="post" enctype="multipart/form-data" id="upload_csv">
-  <input name="csv_file" type="file" id="csv_file" accept=".csv">
-  <button type="submit">Upload</button>
-</form>
-<ul>
-  <li class="id_field">id</li>
-  <li>First Name</li>
-  <li>Last Name</li>
-  <li>Email</li>
-  <li>Phone</li>
-  <li class="errors_field">Errors</li>
-  <li></li>
-</ul>
-<div class="people">
+<div class="container-fluid">
+  <div>
+    <form action="/people" method="post" enctype="multipart/form-data" id="upload_csv">
+      <div class="form-group row align-content-center">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+          <input name="csv_file" type="file" id="csv_file" accept=".csv" class="form-control-file ">
+        </div>
+        <div class="col-sm-3">
+          <button type="submit" class="btn btn-success form-control">Upload</button>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+    </form>
+  </div>
+  <div>
+    <div>
+      <ul class="list-group  list-group-horizontal row text-center text-dark ">
+        <li class="list-group-item flex-fill bg-light">Id</li>
+        <li class="list-group-item flex-fill col-sm-1 bg-light">First Name</li>
+        <li class="list-group-item flex-fill col-sm-1 bg-light">Last Name</li>
+        <li class="list-group-item flex-fill col-sm-2 bg-light">Email</li>
+        <li class="list-group-item flex-fill col-sm-2 bg-light">Phone</li>
+        <li class="list-group-item flex-fill col-sm-4 bg-light">Errors</li>
+        <li class="list-group-item flex-fill bg-light"></li>
+      </ul>
+    </div>
+    <div class="people">
+    </div>
+  </div>
 </div>
