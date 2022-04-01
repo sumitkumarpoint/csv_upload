@@ -19,5 +19,4 @@ blocks:
     task:
       jobs:
         - name: 'Job #1'
-          commands:
-            - bundle exec rspec spec/models --format RspecJunitFormatter --out junit.xml --format documentation
+          commands: []
