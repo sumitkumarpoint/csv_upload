@@ -22,7 +22,6 @@ blocks:
         - name: 'Job #1'
           commands:
             - 'checkout '
-            - bundle update --bundler
             - bundle exec bin/rspec spec
       env_vars:
         - name: RAILS_ENV
