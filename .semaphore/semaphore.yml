@@ -19,6 +19,4 @@ blocks:
     task:
       jobs:
         - name: 'Job #1'
-          commands:
-            - export RAILS_ENV=test
-            - rspec spec/
+          commands: []
