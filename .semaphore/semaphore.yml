@@ -21,7 +21,8 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - 'checkout '
+            - checkout
+            - 'gem install bundler:2.2.12'
             - bundle exec bin/rspec spec
       env_vars:
         - name: RAILS_ENV
