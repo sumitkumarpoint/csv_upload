@@ -25,9 +25,7 @@ blocks:
             - 'RAILS_ENV=test gem install bundler:2.2.12'
             - RAILS_ENV=test bundle install
             - RAILS_ENV=test rspec spec
-      env_vars:
-        - name: ''
-          value: ''
+      env_vars: []
 promotions:
   - name: Staging Deployment
     pipeline_file: pipeline_2.yml
