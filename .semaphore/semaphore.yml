@@ -23,6 +23,7 @@ blocks:
           commands:
             - checkout
             - 'gem install bundler:2.2.12'
+            - bundle install
             - bundle exec bin/rspec spec
       env_vars:
         - name: RAILS_ENV
