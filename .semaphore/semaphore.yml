@@ -14,13 +14,10 @@ blocks:
           value: test
       jobs:
         - name: Test
-          commands:
-            - checkout
-            - bundle exec rspec
+          commands: []
   - name: Model Spec
     task:
       jobs:
         - name: 'Job #1'
           commands:
-            - bin/ci_scripts/setup_backend
-            - bin/rspec spec/models --format RspecJunitFormatter --out junit.xml --format documentation
+            - bundle exec rspec spec/models --format RspecJunitFormatter --out junit.xml --format documentation
